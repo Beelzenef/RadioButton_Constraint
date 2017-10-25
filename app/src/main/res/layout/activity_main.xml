@@ -42,13 +42,15 @@
             android:id="@+id/rdB_Corporativo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/rdB_Corporativo"/>
+            android:text="@string/rdB_Corporativo"
+            android:onClick="onRadioBttonClicked"/>
 
         <RadioButton
             android:id="@+id/rdB_Particular"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/rdB_Particular"/>
+            android:text="@string/rdB_Particular"
+            android:onClick="onRadioBttonClicked"/>
 
     </RadioGroup>
 
@@ -56,14 +58,12 @@
         layout="@layout/particular_layout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="id_guideline"
         app:layout_constraintTop_toBottomOf="@id/rdG_TipoClientes"/>
 
     <include
         layout="@layout/corporacion_layout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="id_guideline"
         app:layout_constraintTop_toBottomOf="@id/rdG_TipoClientes"/>
 
 </android.support.constraint.ConstraintLayout>
